@@ -15,3 +15,16 @@
     color: red;
     font-style: italic;
 }
+
+.image-wrap { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+.image-wrap > span { 
+   position: absolute; 
+   top: 175px; 
+   left: 0; 
+   width: 100%; 
+   display:block;
+}

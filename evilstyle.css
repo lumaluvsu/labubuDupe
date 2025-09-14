@@ -1,0 +1,13 @@
+.image-wrap { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+.image-wrap > span { 
+   position: absolute; 
+   top: 10vb; 
+   left: 0; 
+   width: 10%; 
+   font-size: 4vh;
+   display:block;
+}

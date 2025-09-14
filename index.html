@@ -6,6 +6,25 @@
         <title>这LABUBU规0则</title>
         <link rel="shortcut icon" href="favicon.ico">
         <link rel="stylesheet" href="style.css">
+        <audio loop autoplay>
+            <source src="music/labubudupe.mp3" type="audio/mpeg">
+        </audio>
+        <script>
+            var i = 0;
+            function redirect(url) {
+                var tt = setInterval(function() {
+                    i+=1;
+                    var counter = 6-i;
+                    if(counter===0) {
+                        clearInterval(tt);
+                        window.location = url;
+                    }
+                }, 1000                    
+                )
+            }
+
+            redirect('EVIL.html');
+        </script>
     </head>
     <body style="background-image: url('bganim.gif');">
         <div class="container">

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ЧТО ВЫ НАДЕЛАЛИ.</title>
+        <link rel="shortcut icon" href="evilico.ico">
+        <link rel="stylesheet" href="evilstyle.css">
+        <audio loop autoplay>       
+            <source src="music/evil.mp3" type="audio/mpeg">
+        </audio>
+        <script>
+            function changeColor(){
+                var i = 1;
+                var col=document.getElementById("eviltext");
+                var timer = setInterval(function(){
+                i = i == 0 ? 1 : 0;
+                col.style.color= i == 0 ? "#FF2A00" : "#FFFFFF";
+                },25)
+            }
+        </script>
+    </head>
+    
+    <body onload="changeColor()" style="background-image: url(evilbg.gif); background-size:100vi;">
+        <div class="image-wrap">
+            <img src="scaryeyes.gif" style="mix-blend-mode: darken;width:40vi;">
+            <img src="evilface.gif" style="mix-blend-mode: darken;width:55vi;">
+            <span id="eviltext" style="color: white;">WHAT YOU SEAK IS NOT FOR THE FAINT<br> WHY DO YOU REQUIRE LABUBU CENTRAL?<br> DO YOU TRULY FEEL?<BR> IS THE WORLDY POSSESSION WORTH IT?</BR></span>
+        </div>
+
+        <div style="color: white;">
+
+        </div>
+    </body>
+</html>
